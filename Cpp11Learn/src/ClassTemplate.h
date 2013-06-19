@@ -17,6 +17,8 @@ class ClassTemplate
 public:
 	ClassTemplate() = default;
 	ClassTemplate(const string& name, const string& surname);
+	string getName() const { return this->cname; }
+	string getSurname() const { return this->csurname; }
 	string toString() const;
 	virtual ~ClassTemplate() {};
 private:

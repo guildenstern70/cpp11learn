@@ -22,6 +22,7 @@ int main()
 	// ClassTemplate
 	ClassTemplate *ct = new ClassTemplate("Alessio", "Saltarin");
 	cout << "ClassTemplate => " << ct->toString() << endl;
+	cout << "ClassTemplate => Name = " << ct->getName() << endl;
 	delete ct;
 
 	return 0;

@@ -7,11 +7,22 @@
 //============================================================================
 
 #include <iostream>
+
+#include "ClassTemplate.h"
+
 using namespace std;
 
 int main()
 {
+
+	// Auto var
 	auto i = 43;
 	cout << "The answer is " << i << endl;
+
+	// ClassTemplate
+	ClassTemplate *ct = new ClassTemplate("Alessio", "Saltarin");
+	cout << "ClassTemplate => " << ct->toString() << endl;
+	delete ct;
+
 	return 0;
 }

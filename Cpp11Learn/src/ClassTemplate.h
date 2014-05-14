@@ -12,6 +12,9 @@
 
 using namespace std;
 
+enum Name { Alessio, Giovanni, Enzo, Giuliana, Daniela, Eva };
+enum Surname { Rossi, Rosetti, Verdi, Lottoni, Pini, Abete, Dezo };
+
 class ClassTemplate
 {
 public:
@@ -19,11 +22,15 @@ public:
 	ClassTemplate(const string& name, const string& surname);
 	string getName() const { return this->cname; }
 	string getSurname() const { return this->csurname; }
-	string toString() const;
+	const string toString() const;
+	const string currentDateTime() const;
 	virtual ~ClassTemplate() {};
 private:
 	string cname;
 	string csurname;
+	string ccreated;
+	Name getRandomName() const;
+	Surname getRandomSurname() const;
 };
 
 #endif /* CLASSTEMPLATE_H_ */

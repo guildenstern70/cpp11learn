@@ -7,9 +7,11 @@
 //============================================================================
 
 #include <iostream>
+#include <memory>
 
 #include "ClassTemplate.h"
 #include "Containers.h"
+
 
 using namespace std;
 
@@ -30,15 +32,13 @@ int main()
 
 	// ClassTemplate
 	testOutput("Classes");
-	ClassTemplate *ct = new ClassTemplate("Alessio", "Saltarin");
+	auto ct = std::make_shared<ClassTemplate>("Alessio", "Saltarin");
 	cout << "ClassTemplate => " << ct->toString() << endl;
-	delete ct;
 
     // Containers
 	testOutput("Containers");
-	Containers *cont = new Containers();
+	auto cont = std::make_shared<Containers>();
 	cont->testAll();
-	delete cont;
 
 	return 0;
 }

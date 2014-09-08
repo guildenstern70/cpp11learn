@@ -6,8 +6,6 @@
  */
 
 #include "ClassTemplate.h"
-#include <iostream>
-#include <cstdio>
 #include <ctime>
 #include <cstdlib>
 
@@ -35,10 +33,10 @@ Surname ClassTemplate::getRandomSurname() const
 const string ClassTemplate::currentDateTime() const
 {
     time_t     now = time(0);
-    struct tm  tstruct;
+    struct tm  tmTime;
     char       buf[80];
-    tstruct = *localtime(&now);
-    strftime(buf, sizeof(buf), "%d-%m-%Y %X", &tstruct);
+    tmTime = *localtime(&now);
+    strftime(buf, sizeof(buf), "%d-%m-%Y %X", &tmTime);
     return buf;
 }
 

@@ -1,3 +1,11 @@
+//============================================================================
+// Name        : Containers.cpp
+// Author      : Alessio Saltarin
+// Version     :
+// Copyright   : (C) Alessio Saltarin 2013-2014
+// Description : Cpp11Learn
+//============================================================================
+
 #include "Containers.h"
 
 #include <array>
@@ -5,6 +13,8 @@
 #include <iterator>
 #include <iostream>
 
+
+Containers::~Containers() {}
 
 void Containers::testAll() const
 {

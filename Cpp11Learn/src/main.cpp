@@ -15,12 +15,7 @@
 
 using namespace std;
 
-void testOutput(const string& testName)
-{
-    cout << endl << "======================" << endl;
-    cout << testName << endl;
-    cout << "======================" << endl;
-}
+void testOutput(const string& testName);
 
 int main()
 {
@@ -41,4 +36,11 @@ int main()
 	cont->testAll();
 
 	return 0;
+}
+
+void testOutput(const string& testName)
+{
+    cout << endl << "======================" << endl;
+    cout << testName << endl;
+    cout << "======================" << endl;
 }

@@ -1,16 +1,21 @@
-/*
- * ClassTemplate.cpp
- *
- *  Created on: Jun 19, 2013
- *      Author: alessio
- */
+//============================================================================
+// Name        : ClassTemplate.cpp
+// Author      : Alessio Saltarin
+// Version     :
+// Copyright   : (C) Alessio Saltarin 2013-2014
+// Description : Cpp11Learn
+//============================================================================
 
 #include "ClassTemplate.h"
+
+#include <iostream>
+#include <cstdio>
 #include <ctime>
 #include <cstdlib>
 
+ClassTemplate::~ClassTemplate() {}
 
-ClassTemplate::ClassTemplate(const string& name, const string& surname)
+ClassTemplate::ClassTemplate(const std::string& name, const std::string& surname)
 {
 	this->cname = name;
 	this->csurname = surname;
@@ -20,17 +25,17 @@ ClassTemplate::ClassTemplate(const string& name, const string& surname)
 Name ClassTemplate::getRandomName() const
 {
     int index = rand() % 6;
-    return (Name)index;
+    return static_cast<Name>(index);
 }
 
 Surname ClassTemplate::getRandomSurname() const
 {
     int index = rand() % 6;
-    return (Surname)index;
+    return static_cast<Surname>(index);
 }
 
 // Get current date/time, format is YYYY-MM-DD.HH:mm:ss
-const string ClassTemplate::currentDateTime() const
+const std::string ClassTemplate::currentDateTime() const
 {
     time_t     now = time(0);
     struct tm  tmTime;
@@ -40,9 +45,7 @@ const string ClassTemplate::currentDateTime() const
     return buf;
 }
 
-const string ClassTemplate::toString() const
+const std::string ClassTemplate::toString() const
 {
 	return (this->cname + " " + this->csurname + " [Born on "+ this->ccreated + "]" );
 }
-
-

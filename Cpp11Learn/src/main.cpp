@@ -7,40 +7,57 @@
 //============================================================================
 
 #include <iostream>
+#include <sstream>
 #include <memory>
 
 #include "ClassTemplate.h"
 #include "Containers.h"
-
+#include "Inheritance.h"
 
 using namespace std;
 
-void testOutput(const string& testName);
+void testOutput(const string& testName, const string& testOutput);
 
 int main()
 {
 
+    ostringstream result;
+
 	// Auto var
-	testOutput("Auto VAR");
 	auto i = 43;
-	cout << "The answer is " << i << endl;
+    result << "The answer is " << i;
+    testOutput("Auto VAR", result.str());
+    result.str("");
 
 	// ClassTemplate
-	testOutput("Classes");
 	auto ct = std::make_shared<ClassTemplate>("Alessio", "Saltarin");
-	cout << "ClassTemplate => " << ct->toString() << endl;
+    result << "ClassTemplate => " << ct->toString();
+    testOutput("Class Template", result.str());
+    result.str("");
 
     // Containers
-	testOutput("Containers");
 	auto cont = std::make_shared<Containers>();
-	cont->testAll();
+    testOutput("Containers", cont->testAll());
+    result.str("");
+
+    // Inheritance
+    Person alessio;
+    Student elena;
+    alessio.name = "Alessio"; alessio.surname = "Saltarin";
+    elena.name = "Elena"; elena.surname = "Zambrelli"; elena.expertise = "Engineering";
+    result << alessio.toString() << endl;
+    result << elena.toString() << endl;
+    testOutput("Inheritance", result.str());
+    result.str("");
 
 	return 0;
 }
 
-void testOutput(const string& testName)
+void testOutput(const string& testName, const string& testOutput)
 {
     cout << endl << "======================" << endl;
     cout << testName << endl;
-    cout << "======================" << endl;
+    cout << "----------------------" << endl;
+    cout << testOutput << endl;
+    cout << "======================" << endl << endl;
 }

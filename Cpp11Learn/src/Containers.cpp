@@ -12,27 +12,35 @@
 #include <vector>
 #include <iterator>
 #include <iostream>
+#include <sstream>
 
 
 Containers::~Containers() {}
 
-void Containers::testAll() const
+std::string Containers::testAll() const
 {
-    this->arrayTest();
-    this->vectorTest();
+    std::ostringstream result;
+    result << this->arrayTest();
+    result << this->vectorTest();
+    return result.str();
 }
 
-void Containers::arrayTest() const
+std::string Containers::arrayTest() const
 {
+    std::ostringstream result;
     std::array<int, 5> arrayContainer = {1, 2, 3, 4, 5};
 
     for(int& i: arrayContainer)
-        std::cout << i << ' ';
-    std::cout << std::endl;
+        result << i << ' ';
+    result << std::endl;
+
+    return result.str();
 }
 
-void Containers::vectorTest() const
+std::string Containers::vectorTest() const
 {
+    std::ostringstream result;
+
     std::vector<int> vectorContainer;
     vectorContainer.reserve(10);
     for (int j=10; j>0; j--)
@@ -41,7 +49,9 @@ void Containers::vectorTest() const
     }
 
     for(int& i: vectorContainer)
-        std::cout << i << ' ';
-    std::cout << std::endl;
+        result << i << ' ';
+    result << std::endl;
+
+    return result.str();
 
 }

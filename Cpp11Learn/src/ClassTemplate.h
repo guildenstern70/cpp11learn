@@ -6,8 +6,8 @@
 // Description : Cpp11Learn
 //============================================================================
 
-#ifndef CLASSTEMPLATE_H_
-#define CLASSTEMPLATE_H_
+#ifndef CLASS_TEMPLATE_H_
+#define CLASS_TEMPLATE_H_
 
 #include <string>
 

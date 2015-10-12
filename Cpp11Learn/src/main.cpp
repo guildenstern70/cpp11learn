@@ -35,6 +35,8 @@ int main()
 	auto cont = std::make_shared<Containers>();
 	cont->testAll();
 
+	system("PAUSE");
+
 	return 0;
 }
 

@@ -13,6 +13,8 @@
 #include <ctime>
 #include <cstdlib>
 
+#define _MCBS
+
 ClassTemplate::~ClassTemplate() {}
 
 ClassTemplate::ClassTemplate(const std::string& name, const std::string& surname)
@@ -37,12 +39,16 @@ Surname ClassTemplate::getRandomSurname() const
 // Get current date/time, format is YYYY-MM-DD.HH:mm:ss
 const std::string ClassTemplate::currentDateTime() const
 {
-    time_t     now = time(0);
-    struct tm  tmTime;
-    char       buf[80];
+	time_t now = time(0);
+	struct tm  tmTime;
+	char       buf[80];
+#ifndef _MCBS
     tmTime = *localtime(&now);
-    strftime(buf, sizeof(buf), "%d-%m-%Y %X", &tmTime);
-    return buf;
+#else
+	localtime_s(&tmTime, &now);
+#endif
+	strftime(buf, sizeof(buf), "%d-%m-%Y %X", &tmTime);
+	return buf;
 }
 
 const std::string ClassTemplate::toString() const

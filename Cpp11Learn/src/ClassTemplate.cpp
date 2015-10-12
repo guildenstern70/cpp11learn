@@ -17,10 +17,8 @@
 
 ClassTemplate::~ClassTemplate() {}
 
-ClassTemplate::ClassTemplate(const std::string& name, const std::string& surname)
+ClassTemplate::ClassTemplate(const std::string& name, const std::string& surname) : cname(name), csurname(surname)
 {
-	this->cname = name;
-	this->csurname = surname;
 	this->ccreated = this->currentDateTime();
 }
 

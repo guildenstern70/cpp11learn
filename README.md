@@ -6,7 +6,7 @@ A collection of simple source code examples in C++ 11, featuring key aspects of 
 Build using CMake
 -----------------
 
-1. Make the CMake envitonment files:
+1. Make the CMake environment files:
 
        cd [cpp11learn_dir]  
        cmake .  

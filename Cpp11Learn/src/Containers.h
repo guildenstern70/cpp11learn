@@ -9,15 +9,17 @@
 #ifndef CONTAINERS_H
 #define CONTAINERS_H
 
+#include <string>
+
 class Containers
 {
     public:
         Containers() {}
-        void testAll() const;
+        std::string testAll() const;
         virtual ~Containers();
     protected:
-        void vectorTest() const;
-        void arrayTest() const;
+        std::string vectorTest() const;
+        std::string arrayTest() const;
         void listTest() const;
     private:
 };

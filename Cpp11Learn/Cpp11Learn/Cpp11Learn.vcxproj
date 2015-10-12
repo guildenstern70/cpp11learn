@@ -120,10 +120,12 @@
   <ItemGroup>
     <ClInclude Include="..\src\ClassTemplate.h" />
     <ClInclude Include="..\src\Containers.h" />
+    <ClInclude Include="..\src\Inheritance.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\ClassTemplate.cpp" />
     <ClCompile Include="..\src\Containers.cpp" />
+    <ClCompile Include="..\src\Inheritance.cpp" />
     <ClCompile Include="..\src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

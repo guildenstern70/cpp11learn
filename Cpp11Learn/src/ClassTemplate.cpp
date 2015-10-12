@@ -13,7 +13,7 @@
 #include <ctime>
 #include <cstdlib>
 
-#define _MCBS
+#define VC
 
 ClassTemplate::~ClassTemplate() {}
 
@@ -40,7 +40,7 @@ const std::string ClassTemplate::currentDateTime() const
 	time_t now = time(0);
 	struct tm  tmTime;
 	char       buf[80];
-#ifndef _MCBS
+#ifndef VC
     tmTime = *localtime(&now);
 #else
 	localtime_s(&tmTime, &now);

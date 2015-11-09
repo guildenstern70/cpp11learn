@@ -2,7 +2,7 @@
 // Name        : Inheritance.h
 // Author      : Alessio Saltarin
 // Version     :
-// Copyright   : (C) Alessio Saltarin 2013-2014
+// Copyright   : (C) Alessio Saltarin 2013-2015
 // Description : Cpp11Learn
 //============================================================================
 

@@ -2,7 +2,7 @@
 // Name        : Containers.cpp
 // Author      : Alessio Saltarin
 // Version     :
-// Copyright   : (C) Alessio Saltarin 2013-2014
+// Copyright   : (C) Alessio Saltarin 2013-2015
 // Description : Cpp11Learn
 //============================================================================
 
@@ -10,7 +10,6 @@
 
 #include <array>
 #include <vector>
-#include <iterator>
 #include <iostream>
 #include <sstream>
 
@@ -28,7 +27,7 @@ std::string Containers::testAll() const
 std::string Containers::arrayTest() const
 {
     std::ostringstream result;
-    std::array<int, 5> arrayContainer = {1, 2, 3, 4, 5};
+    std::array<int, 5> arrayContainer = { {1, 2, 3, 4, 5} };
 
     for(int& i: arrayContainer)
         result << i << ' ';

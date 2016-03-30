@@ -13,6 +13,8 @@
 #include "ClassTemplate.h"
 #include "Containers.h"
 #include "Inheritance.h"
+#include "EnumClass.h"
+#include "OperatorOverloading.h"
 
 using namespace std;
 
@@ -48,6 +50,12 @@ int main()
     result << alessio.toString() << endl;
     result << elena.toString() << endl;
     testOutput("Inheritance", result.str());
+    result.str("");
+
+    // Operator Overloading
+    Box newbox(10, 20, 30);
+    result << newbox << endl;
+    testOutput("Operator Overloading", result.str());
     result.str("");
 
 	return 0;

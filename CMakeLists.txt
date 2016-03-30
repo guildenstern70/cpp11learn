@@ -9,6 +9,6 @@ set(SOURCE_FILES    Cpp11Learn/src/main.cpp
                     Cpp11Learn/src/ClassTemplate.h
                     Cpp11Learn/src/ClassTemplate.cpp
                     Cpp11Learn/src/Containers.h
-                    Cpp11Learn/src/Containers.cpp)
+                    Cpp11Learn/src/Containers.cpp Cpp11Learn/src/EnumClass.h Cpp11Learn/src/OperatorOverloading.cpp Cpp11Learn/src/OperatorOverloading.h)
 
 add_executable(Cpp11Learn_exe ${SOURCE_FILES})

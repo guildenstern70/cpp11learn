@@ -2,7 +2,7 @@
 // Name        : Containers.h
 // Author      : Alessio Saltarin
 // Version     :
-// Copyright   : (C) Alessio Saltarin 2013-2014
+// Copyright   : (C) Alessio Saltarin 2013-2015
 // Description : Cpp11Learn
 //============================================================================
 
@@ -20,7 +20,6 @@ class Containers
     protected:
         std::string vectorTest() const;
         std::string arrayTest() const;
-        void listTest() const;
     private:
 };
 

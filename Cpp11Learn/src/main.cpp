@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include <sstream>
-#include <memory>
 
 #include "ClassTemplate.h"
 #include "Containers.h"
@@ -32,7 +31,7 @@ int main()
     result.str("");
 
 	// ClassTemplate
-	auto ct = std::make_shared<ClassTemplate>("Alessio", "Saltarin");
+	auto ct = std::make_shared<ClassTemplate>();
     result << "ClassTemplate => " << ct->toString();
     testOutput("Class Template", result.str());
     result.str("");

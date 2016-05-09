@@ -58,7 +58,7 @@ int main()
     result.str("");
 
     // Text Files;
-    TextFile textFile("/Users/guildenstern1/temp/prova.txt");
+    TextFile textFile("tempfile_prova.txt");
     if (textFile.writeTo("Prova prova prova"))
     {
         result << "Ok, file written" << endl;

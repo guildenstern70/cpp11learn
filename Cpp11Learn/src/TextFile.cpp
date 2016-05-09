@@ -5,7 +5,6 @@
 #include "TextFile.h"
 #include <fstream>
 #include <sstream>
-#include <cstdio>
 
 using namespace std;
 
@@ -75,7 +74,7 @@ bool TextFile::exists()
 
 bool TextFile::deleteFile()
 {
-    std::remove(this->filepath.c_str());
+    remove(this->filepath.c_str());
     if (this->exists())
     {
         this->errormsg = "Error deleting file " + this->filepath;

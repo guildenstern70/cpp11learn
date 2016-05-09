@@ -3,18 +3,20 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/Inheritance.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/OperatorOverloading.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/Containers.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/ClassTemplate.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/ClassTemplate.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/EnumClass.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/Containers.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/Inheritance.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/ClassTemplate.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/Inheritance.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/InitializerList.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/OperatorOverloading.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/TextFile.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/EnumClass.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/TextFile.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/ClassTemplate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/OperatorOverloading.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/InitializerList.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cpp11Learn/src/Containers.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

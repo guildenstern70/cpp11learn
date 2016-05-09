@@ -13,6 +13,7 @@
 #include "Containers.h"
 #include "Inheritance.h"
 #include "OperatorOverloading.h"
+#include "TextFile.h"
 
 using namespace std;
 
@@ -31,7 +32,7 @@ int main()
 
 	// ClassTemplate
 	auto ct = std::make_shared<ClassTemplate>();
-    result << "ClassTemplate => " << ct->toString();
+    result << "ClassTemplate => " << ct->toString().c_str();
     testOutput("Class Template", result.str());
     result.str("");
 
@@ -55,6 +56,35 @@ int main()
     result << newbox << endl;
     testOutput("Operator Overloading", result.str());
     result.str("");
+
+    // Text Files;
+    TextFile textFile("/Users/guildenstern1/temp/prova.txt");
+    if (textFile.writeTo("Prova prova prova"))
+    {
+        result << "Ok, file written" << endl;
+        string prova;
+        if (textFile.readFrom(prova))
+        {
+            result << "File contents: " << prova.c_str() << endl;
+            if (!textFile.deleteFile())
+            {
+                result << "ERROR file was not deleted." << endl;
+            }
+        }
+        else
+        {
+            result << "ERROR reading file " << endl;
+            result << textFile.getErrorMessage() << endl;
+        }
+    }
+    else
+    {
+        result << "ERROR writing file " << endl;
+        result << textFile.getErrorMessage() << endl;
+    }
+    testOutput("Text File", result.str());
+    result.str("");
+
 
 	return 0;
 }

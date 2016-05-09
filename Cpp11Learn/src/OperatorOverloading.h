@@ -25,7 +25,7 @@ public:
     int getLength() const { return this->l; } ;
     int getBreadth() const { return this->b; } ;
     int getHeight() const { return this->h; };
-    long long CalculateVolume() const;
+    long long calculateVolume() const;
 
     // Overload < (is minor than)
     bool operator<(const Box& box) const;

@@ -29,7 +29,7 @@ Box::Box(const Box& box)
     this->h = box.getHeight();
 }
 
-long long Box::CalculateVolume() const
+long long Box::calculateVolume() const
 {
     return this->l * this-> b * this->h;
 }

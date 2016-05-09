@@ -8,22 +8,52 @@
 
 #include <string>
 
-using namespace std;
-
 class TextFile
 {
 
 private:
-    string filepath;
-    string errormsg;
+    std::string filepath;
+    std::string errormsg;
 
 public:
-    TextFile(const string& filename);
-    bool readFrom(string& contents);
-    bool writeTo(const string& filename, bool append=false);
+    //! Constructor
+    /*!
+      \param filename Full path to file
+    */
+    TextFile(const std::string& filename);
+
+    //! Read from file
+    /*!
+      \param contents String containing file contents
+      \return true, if the operation was successful
+    */
+    bool readFrom(std::string& contents);
+
+    //! Write text into file
+    /*!
+      \param contents String containing file contents
+      \param append True if you want to append rather than create
+      \return true, if the operation was successful
+    */
+    bool writeTo(const std::string& filename, bool append=false);
+
+    //! Delete file
+    /*!
+      \return true, if the operation was successful
+    */
     bool deleteFile();
+
+    //! Check if file exists
+    /*!
+      \return true, if the file exists
+    */
     bool exists();
-    string getErrorMessage() const { return this->errormsg; }
+
+    //! Get the latest operation error message
+    /*!
+      \return Error message
+    */
+    std::string getErrorMessage() const { return this->errormsg; }
 };
 
 

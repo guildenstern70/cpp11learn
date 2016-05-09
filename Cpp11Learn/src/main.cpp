@@ -66,7 +66,11 @@ int main()
         if (textFile.readFrom(prova))
         {
             result << "File contents: " << prova.c_str() << endl;
-            if (!textFile.deleteFile())
+            if (textFile.deleteFile())
+            {
+                result << "File was correctly deleted." << endl;
+            }
+            else
             {
                 result << "ERROR file was not deleted." << endl;
             }

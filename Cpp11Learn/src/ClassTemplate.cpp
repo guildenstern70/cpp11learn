@@ -15,32 +15,37 @@
 ClassTemplate::ClassTemplate()
 {
     
-    srand (time(NULL));
+    srand ((unsigned int) time(nullptr));
     
     Names nameGenerator;
     this->cname = nameGenerator.getName();
     this->csurname = nameGenerator.getSurname();
-    this->ccreated = this->currentDateTime();
+
+    char buffer[80];
+    this->currentDateTime(buffer);
+    this->ccreated = std::string(buffer);
 }
 
 ClassTemplate::ClassTemplate(const std::string& name, const std::string& surname) : cname(name), csurname(surname)
 {
-	this->ccreated = this->currentDateTime();
+    char buffer[80];
+    this->currentDateTime(buffer);
+	this->ccreated = std::string(buffer);
 }
 
 // Get current date/time, format is YYYY-MM-DD.HH:mm:ss
-std::string ClassTemplate::currentDateTime()
+void ClassTemplate::currentDateTime(char* dateTime)
 {
 	time_t now = time(nullptr);
 	struct tm  tmTime;
-	char       buf[80];
+
 #ifndef VC
     tmTime = *localtime(&now);
 #else
 	localtime_s(&tmTime, &now);
 #endif
-	strftime(buf, sizeof(buf), "%d-%m-%Y %X", &tmTime);
-	return buf;
+	strftime(dateTime, sizeof(dateTime), "%d-%m-%Y %X", &tmTime);
+
 }
 
 const std::string ClassTemplate::toString() const

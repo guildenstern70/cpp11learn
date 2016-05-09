@@ -29,9 +29,9 @@ ClassTemplate::ClassTemplate(const std::string& name, const std::string& surname
 }
 
 // Get current date/time, format is YYYY-MM-DD.HH:mm:ss
-const std::string ClassTemplate::currentDateTime() const
+std::string ClassTemplate::currentDateTime()
 {
-	time_t now = time(0);
+	time_t now = time(nullptr);
 	struct tm  tmTime;
 	char       buf[80];
 #ifndef VC

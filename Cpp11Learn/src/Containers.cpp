@@ -29,7 +29,7 @@ std::string Containers::arrayTest() const
     std::ostringstream result;
     std::array<int, 5> arrayContainer = { {1, 2, 3, 4, 5} };
 
-    for(int& i: arrayContainer)
+    for(auto& i: arrayContainer)
         result << i << ' ';
     result << std::endl;
 
@@ -42,12 +42,12 @@ std::string Containers::vectorTest() const
 
     std::vector<int> vectorContainer;
     vectorContainer.reserve(10);
-    for (int j=10; j>0; j--)
+    for (auto j=10; j>0; j--)
     {
         vectorContainer.push_back(j);
     }
 
-    for(int& i: vectorContainer)
+    for(auto& i: vectorContainer)
         result << i << ' ';
     result << std::endl;
 

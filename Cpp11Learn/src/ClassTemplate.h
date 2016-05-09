@@ -17,7 +17,7 @@ public:
 	ClassTemplate();
 	ClassTemplate(const std::string& name, const std::string& surname);
 	const std::string toString() const;
-	const std::string currentDateTime() const;
+	static std::string currentDateTime();
 	virtual ~ClassTemplate() {};
 private:
 	std::string cname;

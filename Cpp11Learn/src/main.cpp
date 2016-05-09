@@ -12,7 +12,6 @@
 #include "ClassTemplate.h"
 #include "Containers.h"
 #include "Inheritance.h"
-#include "EnumClass.h"
 #include "OperatorOverloading.h"
 
 using namespace std;

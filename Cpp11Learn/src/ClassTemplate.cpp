@@ -10,6 +10,7 @@
 #include "InitializerList.h"
 
 #include <iostream>
+#include <ctime>
 
 
 ClassTemplate::ClassTemplate()
@@ -24,6 +25,7 @@ ClassTemplate::ClassTemplate()
     char buffer[80];
     this->currentDateTime(buffer);
     this->ccreated = std::string(buffer);
+
 }
 
 ClassTemplate::ClassTemplate(const std::string& name, const std::string& surname) : cname(name), csurname(surname)

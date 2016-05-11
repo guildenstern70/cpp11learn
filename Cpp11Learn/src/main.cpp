@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <sstream>
+#include <memory>
 
 #include "ClassTemplate.h"
 #include "Containers.h"

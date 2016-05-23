@@ -31,14 +31,20 @@ int main()
     testOutput("Auto VAR", result.str());
     result.str("");
 
-	// ClassTemplate
-	auto ct = std::make_shared<ClassTemplate>();
-    result << "ClassTemplate => " << ct->toString().c_str();
+	// Object creation (shared)
+	auto ct_shared = std::make_shared<ClassTemplate>();
+    result << "ClassTemplate => " << ct_shared->toString().c_str();
+    testOutput("Class Template", result.str());
+    result.str("");
+
+    // Object creation (unique)
+    unique_ptr<ClassTemplate> ct_unique(new ClassTemplate());
+    result << "ClassTemplate => " << ct_unique->toString().c_str();
     testOutput("Class Template", result.str());
     result.str("");
 
     // Containers
-	auto cont = std::make_shared<Containers>();
+	unique_ptr<Containers> cont(new Containers());
     testOutput("Containers", cont->testAll());
     result.str("");
 

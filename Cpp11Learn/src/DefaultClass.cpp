@@ -1,19 +1,18 @@
 //============================================================================
-// Name        : ClassTemplate.cpp
+// Name        : DefaultClass.cpp
 // Author      : Alessio Saltarin
 // Version     :
-// Copyright   : (C) Alessio Saltarin 2013-2015
+// Copyright   : (C) Alessio Saltarin 2013-2016
 // Description : Cpp11Learn
 //============================================================================
 
-#include "ClassTemplate.h"
+#include "DefaultClass.h"
 #include "InitializerList.h"
 
 #include <iostream>
-#include <ctime>
 
 
-ClassTemplate::ClassTemplate()
+DefaultClass::DefaultClass()
 {
     
     srand ((unsigned int) time(nullptr));
@@ -28,7 +27,7 @@ ClassTemplate::ClassTemplate()
 
 }
 
-ClassTemplate::ClassTemplate(const std::string& name, const std::string& surname) : cname(name), csurname(surname)
+DefaultClass::DefaultClass(const std::string& name, const std::string& surname) : cname(name), csurname(surname)
 {
     char buffer[80];
     this->currentDateTime(buffer);
@@ -36,7 +35,7 @@ ClassTemplate::ClassTemplate(const std::string& name, const std::string& surname
 }
 
 // Get current date/time, format is YYYY-MM-DD.HH:mm:ss
-void ClassTemplate::currentDateTime(char* dateTime)
+void DefaultClass::currentDateTime(char* dateTime)
 {
 	time_t now = time(nullptr);
 	struct tm  tmTime;
@@ -50,7 +49,7 @@ void ClassTemplate::currentDateTime(char* dateTime)
 
 }
 
-const std::string ClassTemplate::toString() const
+const std::string DefaultClass::toString() const
 {
 	return (this->cname + " " + this->csurname + " [Born on "+ this->ccreated + "]" );
 }

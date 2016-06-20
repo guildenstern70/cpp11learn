@@ -14,11 +14,11 @@
 
   all: $(TARGET)
 
-  $(TARGET): $(BIN) ClassTemplate.o Containers.o main.o
-	$(CC) $(CFLAGS) -o $(BIN)$(TARGET) $(BIN)ClassTemplate.o $(BIN)Containers.o $(BIN)main.o
+  $(TARGET): $(BIN) DefaultClass.o Containers.o main.o
+	$(CC) $(CFLAGS) -o $(BIN)$(TARGET) $(BIN)DefaultClass.o $(BIN)Containers.o $(BIN)main.o
 	
-  ClassTemplate.o: ClassTemplate.cpp
-	$(CC) $(CFLAGS) -c ClassTemplate.cpp -o $(BIN)ClassTemplate.o
+  DefaultClass.o: DefaultClass.cpp
+	$(CC) $(CFLAGS) -c DefaultClass.cpp -o $(BIN)DefaultClass.o
 
   Containers.o: Containers.cpp
 	$(CC) $(CFLAGS) -c Containers.cpp -o $(BIN)Containers.o

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\ClassTemplate.h">
+    <ClInclude Include="..\src\DefaultClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Containers.h">
@@ -26,7 +26,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\ClassTemplate.cpp">
+    <ClCompile Include="..\src\DefaultClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Containers.cpp">

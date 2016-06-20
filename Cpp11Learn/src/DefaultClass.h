@@ -1,8 +1,8 @@
 //============================================================================
-// Name        : ClassTemplate.h
+// Name        : DefaultClass.h
 // Author      : Alessio Saltarin
 // Version     :
-// Copyright   : (C) Alessio Saltarin 2013-2015
+// Copyright   : (C) Alessio Saltarin 2013-2016
 // Description : Cpp11Learn
 //============================================================================
 
@@ -11,14 +11,14 @@
 
 #include <string>
 
-class ClassTemplate
+class DefaultClass
 {
 public:
-	ClassTemplate();
-	ClassTemplate(const std::string& name, const std::string& surname);
+	DefaultClass();
+	DefaultClass(const std::string& name, const std::string& surname);
 	const std::string toString() const;
 	void currentDateTime(char* dateTime);
-	virtual ~ClassTemplate() {};
+	virtual ~DefaultClass() {};
 private:
 	std::string cname;
 	std::string csurname;

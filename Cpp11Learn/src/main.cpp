@@ -10,11 +10,13 @@
 #include <sstream>
 #include <memory>
 
-#include "ClassTemplate.h"
+#include "DefaultClass.h"
 #include "Containers.h"
 #include "Inheritance.h"
 #include "OperatorOverloading.h"
 #include "TextFile.h"
+#include "ClassTemplateSpec.h"
+
 
 using namespace std;
 
@@ -32,14 +34,14 @@ int main()
     result.str("");
 
 	// Object creation (shared)
-	auto ct_shared = std::make_shared<ClassTemplate>();
-    result << "ClassTemplate => " << ct_shared->toString().c_str();
+	auto ct_shared = std::make_shared<DefaultClass>();
+    result << "DefaultClass => " << ct_shared->toString().c_str();
     testOutput("Class Template", result.str());
     result.str("");
 
     // Object creation (unique)
-    unique_ptr<ClassTemplate> ct_unique(new ClassTemplate());
-    result << "ClassTemplate => " << ct_unique->toString().c_str();
+    unique_ptr<DefaultClass> ct_unique(new DefaultClass());
+    result << "DefaultClass => " << ct_unique->toString().c_str();
     testOutput("Class Template", result.str());
     result.str("");
 
@@ -95,6 +97,9 @@ int main()
     }
     testOutput("Text File", result.str());
     result.str("");
+
+    // Class Template Specialization
+    testOutput("Class Template Specialization", classTemplateSpecTest());
 
 
 	return 0;

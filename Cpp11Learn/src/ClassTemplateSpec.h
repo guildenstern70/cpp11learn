@@ -1,14 +1,17 @@
-//
-// Created by Alessio Saltarin on 20/06/16.
-//
+//============================================================================
+// Name        : ClassTemplateSpec.h
+// Author      : Alessio Saltarin
+// Version     :
+// Copyright   : (C) Alessio Saltarin 2013-2016
+// Description : Cpp11Learn
+//============================================================================
+
 
 #ifndef CPP11LEARN_CLASSTEMPLATESPEC_H
 #define CPP11LEARN_CLASSTEMPLATESPEC_H
 
 #include <string>
-
-enum class Fruit { apple, orange, pear };
-enum class Color { red, green, orange };
+#include "EnumClass.h"
 
 template <typename T> struct Traits;
 

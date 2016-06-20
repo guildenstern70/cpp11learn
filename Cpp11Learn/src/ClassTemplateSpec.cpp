@@ -1,6 +1,10 @@
-//
-// Created by Alessio Saltarin on 20/06/16.
-//
+//============================================================================
+// Name        : ClassTemplateSpec.cpp
+// Author      : Alessio Saltarin
+// Version     :
+// Copyright   : (C) Alessio Saltarin 2013-2016
+// Description : Cpp11Learn
+//============================================================================
 
 #include "ClassTemplateSpec.h"
 

@@ -32,4 +32,14 @@ git push
 git add
 
 
+Using Visual Studio code
+------------------------
+
+Building commands are in tasks.json file.
+
+1. Ctrl+Shift+B => Build solution (runs cmake --build)
+
+
+
+
 

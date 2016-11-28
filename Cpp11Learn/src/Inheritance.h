@@ -13,8 +13,8 @@
 
 struct Person
 {
-    std::string name;
-    std::string surname;
+    std::string firstName;
+    std::string lastName;
     virtual std::string toString() const;
 };
 

@@ -2,13 +2,12 @@
 // Name        : main.cpp
 // Author      : Alessio Saltarin
 // Version     :
-// Copyright   : (C) Alessio Saltarin 2013-2014
+// Copyright   : (C) Alessio Saltarin 2013-2016
 // Description : Cpp11Learn
 //============================================================================
 
 #include <iostream>
 #include <sstream>
-#include <memory>
 
 #include "DefaultClass.h"
 #include "Containers.h"
@@ -53,8 +52,8 @@ int main()
     // Inheritance
     Person alessio;
     Student elena;
-    alessio.name = "Alessio"; alessio.surname = "Saltarin";
-    elena.name = "Elena"; elena.surname = "Zambrelli"; elena.expertise = "Engineering";
+    alessio.firstName = "Alessio"; alessio.lastName = "Saltarin";
+    elena.firstName = "Elena"; elena.lastName = "Zambrelli"; elena.expertise = "Engineering";
     result << alessio.toString() << endl;
     result << elena.toString() << endl;
     testOutput("Inheritance", result.str());

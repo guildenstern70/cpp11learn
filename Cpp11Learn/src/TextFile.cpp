@@ -13,7 +13,7 @@ bool TextFile::readFrom(string& contents)
     bool success = true;
     try
     {
-        ifstream in(this->filepath);
+        ifstream in(this->filePath);
         if (in)
         {
             ostringstream readcontent;
@@ -23,13 +23,13 @@ bool TextFile::readFrom(string& contents)
         else
         {
             success=false;
-            this->errormsg="File does not exist.";
+            this->errorMessage="File does not exist.";
         }
     }
     catch (exception& e)
     {
         success=false;
-        this->errormsg=e.what();
+        this->errorMessage=e.what();
     }
 
     return success;
@@ -37,7 +37,7 @@ bool TextFile::readFrom(string& contents)
 
 }
 
-bool TextFile::writeTo(const string &contents, bool append)
+bool TextFile::writeTo(const string &fileName, bool append)
 {
     bool success = true;
     ios_base::openmode flag=ios::out;
@@ -47,37 +47,37 @@ bool TextFile::writeTo(const string &contents, bool append)
 
     try
     {
-        ofstream out(this->filepath,flag);
-        out << contents;
+        ofstream out(this->filePath,flag);
+        out << fileName;
     }
     catch (exception& e)
     {
         success = false;
-        this->errormsg=string(e.what());
+        this->errorMessage=string(e.what());
     }
 
     return success;
 
 }
 
-TextFile::TextFile(const string &filename)
+TextFile::TextFile(const string &fileName)
 {
-    this->filepath = filename;
-    this->errormsg = "";
+    this->filePath = fileName;
+    this->errorMessage = "";
 }
 
 bool TextFile::exists()
 {
-    ifstream f(this->filepath.c_str());
+    ifstream f(this->filePath.c_str());
     return f.good();
 }
 
 bool TextFile::deleteFile()
 {
-    remove(this->filepath.c_str());
+    remove(this->filePath.c_str());
     if (this->exists())
     {
-        this->errormsg = "Error deleting file " + this->filepath;
+        this->errorMessage = "Error deleting file " + this->filePath;
         return false;
     }
     return true;

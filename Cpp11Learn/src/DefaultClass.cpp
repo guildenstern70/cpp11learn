@@ -18,20 +18,20 @@ DefaultClass::DefaultClass()
     srand ((unsigned int) time(nullptr));
     
     Names nameGenerator;
-    this->cname = nameGenerator.getName();
-    this->csurname = nameGenerator.getSurname();
+    this->firstName = nameGenerator.getName();
+    this->lastName = nameGenerator.getSurname();
 
     char buffer[80];
     this->currentDateTime(buffer);
-    this->ccreated = std::string(buffer);
+    this->whenCreated = std::string(buffer);
 
 }
 
-DefaultClass::DefaultClass(const std::string& name, const std::string& surname) : cname(name), csurname(surname)
+DefaultClass::DefaultClass(const std::string& name, const std::string& surname) : firstName(name), lastName(surname)
 {
     char buffer[80];
     this->currentDateTime(buffer);
-	this->ccreated = std::string(buffer);
+	this->whenCreated = std::string(buffer);
 }
 
 // Get current date/time, format is YYYY-MM-DD.HH:mm:ss
@@ -51,5 +51,5 @@ void DefaultClass::currentDateTime(char* dateTime)
 
 const std::string DefaultClass::toString() const
 {
-	return (this->cname + " " + this->csurname + " [Born on "+ this->ccreated + "]" );
+	return (this->firstName + " " + this->lastName + " [Born on "+ this->whenCreated + "]" );
 }

@@ -11,18 +11,18 @@
 std::string Person::toString() const
 {
     std::string personString;
-    personString += this->name;
+    personString += this->firstName;
     personString += " ";
-    personString += this->surname;
+    personString += this->lastName;
     return personString;
 }
 
 std::string Student::toString() const
 {
     std::string personString;
-    personString += this->name;
+    personString += this->firstName;
     personString += " ";
-    personString += this->surname;
+    personString += this->lastName;
     personString += " (Student in ";
     personString += this->expertise;
     personString += ")";

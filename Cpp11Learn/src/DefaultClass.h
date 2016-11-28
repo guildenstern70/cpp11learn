@@ -20,9 +20,9 @@ public:
 	void currentDateTime(char* dateTime);
 	virtual ~DefaultClass() {};
 private:
-	std::string cname;
-	std::string csurname;
-	std::string ccreated;
+	std::string firstName;
+	std::string lastName;
+	std::string whenCreated;
 };
 
 #endif /* CLASSTEMPLATE_H_ */

@@ -12,15 +12,15 @@ class TextFile
 {
 
 private:
-    std::string filepath;
-    std::string errormsg;
+    std::string filePath;
+    std::string errorMessage;
 
 public:
     //! Constructor
     /*!
-      \param filename Full path to file
+      \param fileName Full path to file
     */
-    TextFile(const std::string& filename);
+    TextFile(const std::string& fileName);
 
     //! Read from file
     /*!
@@ -35,7 +35,7 @@ public:
       \param append True if you want to append rather than create
       \return true, if the operation was successful
     */
-    bool writeTo(const std::string& filename, bool append=false);
+    bool writeTo(const std::string& fileName, bool append=false);
 
     //! Delete file
     /*!
@@ -53,7 +53,7 @@ public:
     /*!
       \return Error message
     */
-    std::string getErrorMessage() const { return this->errormsg; }
+    std::string getErrorMessage() const { return this->errorMessage; }
 };
 
 

@@ -6,6 +6,7 @@
 // Description : Cpp11Learn
 //============================================================================
 
+#include <memory>
 #include <iostream>
 #include <sstream>
 

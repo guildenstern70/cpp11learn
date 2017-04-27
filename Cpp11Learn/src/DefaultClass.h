@@ -11,6 +11,8 @@
 
 #include <string>
 
+using uint = unsigned int;
+
 class DefaultClass
 {
 public:
@@ -18,10 +20,13 @@ public:
 	DefaultClass(const std::string& name, const std::string& surname);
 	const std::string toString() const;
 	void currentDateTime(char* dateTime);
+    void setAge(uint age) { this->age = age; }
+    uint getAge() { return this->age; }
 	virtual ~DefaultClass() {};
 private:
 	std::string firstName;
 	std::string lastName;
+	uint age;
 	std::string whenCreated;
 };
 

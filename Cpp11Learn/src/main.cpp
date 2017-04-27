@@ -41,6 +41,7 @@ int main()
 
     // Object creation (unique)
     unique_ptr<DefaultClass> ct_unique(new DefaultClass());
+    ct_unique->setAge(18);
     result << "DefaultClass => " << ct_unique->toString().c_str();
     testOutput("Class Template", result.str());
     result.str("");

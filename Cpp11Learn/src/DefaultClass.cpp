@@ -21,7 +21,7 @@ DefaultClass::DefaultClass()
     this->firstName = nameGenerator.getName();
     this->lastName = nameGenerator.getSurname();
 
-    char buffer[80];
+    char buffer[160];
     this->currentDateTime(buffer);
     this->whenCreated = std::string(buffer);
 
@@ -29,7 +29,7 @@ DefaultClass::DefaultClass()
 
 DefaultClass::DefaultClass(const std::string& name, const std::string& surname) : firstName(name), lastName(surname)
 {
-    char buffer[80];
+    char buffer[160];
     this->currentDateTime(buffer);
 	this->whenCreated = std::string(buffer);
 }
@@ -45,7 +45,7 @@ void DefaultClass::currentDateTime(char* dateTime)
 #else
 	localtime_s(&tmTime, &now);
 #endif
-	strftime(dateTime, sizeof(dateTime), "%d-%m-%Y %X", &tmTime);
+	strftime(dateTime, sizeof(dateTime), "%d-%m-%Y %H:%M:%S", &tmTime);
 
 }
 

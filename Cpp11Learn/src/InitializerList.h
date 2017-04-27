@@ -6,8 +6,8 @@
 // Description : Cpp11Learn
 //============================================================================
 
-#ifndef INITIALIZERLIST_H
-#define INITIALIZERLIST_H
+#ifndef INITIALIZER_LIST_H
+#define INITIALIZER_LIST_H
 
 #include <string>
 #include <vector>
@@ -24,4 +24,4 @@ private:
     std::vector<std::string>* surnames;
 };
 
-#endif //INITIALIZERLIST_H
+#endif //INITIALIZER_LIST_H

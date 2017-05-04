@@ -1,6 +1,8 @@
 cpp11learn
 ==========
 
+[![Run Status](https://api.shippable.com/projects/590adb904ff18d070026ddbb/badge?branch=master)](https://app.shippable.com/github/guildenstern70/cpp11learn)
+
 A collection of simple source code examples in C++ 11, featuring key aspects of the language.
 
 Build using CMake

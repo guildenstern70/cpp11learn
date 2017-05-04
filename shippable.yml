@@ -1,4 +1,7 @@
 language: c
+install:
+  - sudo apt-get -qq -y update
+  - sudo apt-get install cmake
 build:
   ci:
     - cmake .

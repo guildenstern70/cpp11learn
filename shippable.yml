@@ -1,9 +1,0 @@
-language: python
-os:
-    - linux
-notifications:
-    email: alessiosaltarin@gmail.com
-before_install:
-script:
-    - cmake .
-    - cmake --build .

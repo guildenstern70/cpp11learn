@@ -111,233 +111,233 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Cpp11Learn_exe
+# Target rules for targets named Cpp11Learn
 
 # Build rule for target.
-Cpp11Learn_exe: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Cpp11Learn_exe
-.PHONY : Cpp11Learn_exe
+Cpp11Learn: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cpp11Learn
+.PHONY : Cpp11Learn
 
 # fast build rule for target.
-Cpp11Learn_exe/fast:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/build
-.PHONY : Cpp11Learn_exe/fast
+Cpp11Learn/fast:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/build
+.PHONY : Cpp11Learn/fast
 
-Cpp11Learn/src/ClassTemplateSpec.o: Cpp11Learn/src/ClassTemplateSpec.cpp.o
+src/ClassTemplateSpec.o: src/ClassTemplateSpec.cpp.o
 
-.PHONY : Cpp11Learn/src/ClassTemplateSpec.o
-
-# target to build an object file
-Cpp11Learn/src/ClassTemplateSpec.cpp.o:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/ClassTemplateSpec.cpp.o
-.PHONY : Cpp11Learn/src/ClassTemplateSpec.cpp.o
-
-Cpp11Learn/src/ClassTemplateSpec.i: Cpp11Learn/src/ClassTemplateSpec.cpp.i
-
-.PHONY : Cpp11Learn/src/ClassTemplateSpec.i
-
-# target to preprocess a source file
-Cpp11Learn/src/ClassTemplateSpec.cpp.i:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/ClassTemplateSpec.cpp.i
-.PHONY : Cpp11Learn/src/ClassTemplateSpec.cpp.i
-
-Cpp11Learn/src/ClassTemplateSpec.s: Cpp11Learn/src/ClassTemplateSpec.cpp.s
-
-.PHONY : Cpp11Learn/src/ClassTemplateSpec.s
-
-# target to generate assembly for a file
-Cpp11Learn/src/ClassTemplateSpec.cpp.s:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/ClassTemplateSpec.cpp.s
-.PHONY : Cpp11Learn/src/ClassTemplateSpec.cpp.s
-
-Cpp11Learn/src/Containers.o: Cpp11Learn/src/Containers.cpp.o
-
-.PHONY : Cpp11Learn/src/Containers.o
+.PHONY : src/ClassTemplateSpec.o
 
 # target to build an object file
-Cpp11Learn/src/Containers.cpp.o:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/Containers.cpp.o
-.PHONY : Cpp11Learn/src/Containers.cpp.o
+src/ClassTemplateSpec.cpp.o:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/ClassTemplateSpec.cpp.o
+.PHONY : src/ClassTemplateSpec.cpp.o
 
-Cpp11Learn/src/Containers.i: Cpp11Learn/src/Containers.cpp.i
+src/ClassTemplateSpec.i: src/ClassTemplateSpec.cpp.i
 
-.PHONY : Cpp11Learn/src/Containers.i
+.PHONY : src/ClassTemplateSpec.i
 
 # target to preprocess a source file
-Cpp11Learn/src/Containers.cpp.i:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/Containers.cpp.i
-.PHONY : Cpp11Learn/src/Containers.cpp.i
+src/ClassTemplateSpec.cpp.i:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/ClassTemplateSpec.cpp.i
+.PHONY : src/ClassTemplateSpec.cpp.i
 
-Cpp11Learn/src/Containers.s: Cpp11Learn/src/Containers.cpp.s
+src/ClassTemplateSpec.s: src/ClassTemplateSpec.cpp.s
 
-.PHONY : Cpp11Learn/src/Containers.s
+.PHONY : src/ClassTemplateSpec.s
 
 # target to generate assembly for a file
-Cpp11Learn/src/Containers.cpp.s:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/Containers.cpp.s
-.PHONY : Cpp11Learn/src/Containers.cpp.s
+src/ClassTemplateSpec.cpp.s:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/ClassTemplateSpec.cpp.s
+.PHONY : src/ClassTemplateSpec.cpp.s
 
-Cpp11Learn/src/DefaultClass.o: Cpp11Learn/src/DefaultClass.cpp.o
+src/Containers.o: src/Containers.cpp.o
 
-.PHONY : Cpp11Learn/src/DefaultClass.o
+.PHONY : src/Containers.o
 
 # target to build an object file
-Cpp11Learn/src/DefaultClass.cpp.o:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/DefaultClass.cpp.o
-.PHONY : Cpp11Learn/src/DefaultClass.cpp.o
+src/Containers.cpp.o:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/Containers.cpp.o
+.PHONY : src/Containers.cpp.o
 
-Cpp11Learn/src/DefaultClass.i: Cpp11Learn/src/DefaultClass.cpp.i
+src/Containers.i: src/Containers.cpp.i
 
-.PHONY : Cpp11Learn/src/DefaultClass.i
+.PHONY : src/Containers.i
 
 # target to preprocess a source file
-Cpp11Learn/src/DefaultClass.cpp.i:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/DefaultClass.cpp.i
-.PHONY : Cpp11Learn/src/DefaultClass.cpp.i
+src/Containers.cpp.i:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/Containers.cpp.i
+.PHONY : src/Containers.cpp.i
 
-Cpp11Learn/src/DefaultClass.s: Cpp11Learn/src/DefaultClass.cpp.s
+src/Containers.s: src/Containers.cpp.s
 
-.PHONY : Cpp11Learn/src/DefaultClass.s
+.PHONY : src/Containers.s
 
 # target to generate assembly for a file
-Cpp11Learn/src/DefaultClass.cpp.s:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/DefaultClass.cpp.s
-.PHONY : Cpp11Learn/src/DefaultClass.cpp.s
+src/Containers.cpp.s:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/Containers.cpp.s
+.PHONY : src/Containers.cpp.s
 
-Cpp11Learn/src/Inheritance.o: Cpp11Learn/src/Inheritance.cpp.o
+src/DefaultClass.o: src/DefaultClass.cpp.o
 
-.PHONY : Cpp11Learn/src/Inheritance.o
+.PHONY : src/DefaultClass.o
 
 # target to build an object file
-Cpp11Learn/src/Inheritance.cpp.o:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/Inheritance.cpp.o
-.PHONY : Cpp11Learn/src/Inheritance.cpp.o
+src/DefaultClass.cpp.o:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/DefaultClass.cpp.o
+.PHONY : src/DefaultClass.cpp.o
 
-Cpp11Learn/src/Inheritance.i: Cpp11Learn/src/Inheritance.cpp.i
+src/DefaultClass.i: src/DefaultClass.cpp.i
 
-.PHONY : Cpp11Learn/src/Inheritance.i
+.PHONY : src/DefaultClass.i
 
 # target to preprocess a source file
-Cpp11Learn/src/Inheritance.cpp.i:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/Inheritance.cpp.i
-.PHONY : Cpp11Learn/src/Inheritance.cpp.i
+src/DefaultClass.cpp.i:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/DefaultClass.cpp.i
+.PHONY : src/DefaultClass.cpp.i
 
-Cpp11Learn/src/Inheritance.s: Cpp11Learn/src/Inheritance.cpp.s
+src/DefaultClass.s: src/DefaultClass.cpp.s
 
-.PHONY : Cpp11Learn/src/Inheritance.s
+.PHONY : src/DefaultClass.s
 
 # target to generate assembly for a file
-Cpp11Learn/src/Inheritance.cpp.s:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/Inheritance.cpp.s
-.PHONY : Cpp11Learn/src/Inheritance.cpp.s
+src/DefaultClass.cpp.s:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/DefaultClass.cpp.s
+.PHONY : src/DefaultClass.cpp.s
 
-Cpp11Learn/src/InitializerList.o: Cpp11Learn/src/InitializerList.cpp.o
+src/Inheritance.o: src/Inheritance.cpp.o
 
-.PHONY : Cpp11Learn/src/InitializerList.o
+.PHONY : src/Inheritance.o
 
 # target to build an object file
-Cpp11Learn/src/InitializerList.cpp.o:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/InitializerList.cpp.o
-.PHONY : Cpp11Learn/src/InitializerList.cpp.o
+src/Inheritance.cpp.o:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/Inheritance.cpp.o
+.PHONY : src/Inheritance.cpp.o
 
-Cpp11Learn/src/InitializerList.i: Cpp11Learn/src/InitializerList.cpp.i
+src/Inheritance.i: src/Inheritance.cpp.i
 
-.PHONY : Cpp11Learn/src/InitializerList.i
+.PHONY : src/Inheritance.i
 
 # target to preprocess a source file
-Cpp11Learn/src/InitializerList.cpp.i:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/InitializerList.cpp.i
-.PHONY : Cpp11Learn/src/InitializerList.cpp.i
+src/Inheritance.cpp.i:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/Inheritance.cpp.i
+.PHONY : src/Inheritance.cpp.i
 
-Cpp11Learn/src/InitializerList.s: Cpp11Learn/src/InitializerList.cpp.s
+src/Inheritance.s: src/Inheritance.cpp.s
 
-.PHONY : Cpp11Learn/src/InitializerList.s
+.PHONY : src/Inheritance.s
 
 # target to generate assembly for a file
-Cpp11Learn/src/InitializerList.cpp.s:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/InitializerList.cpp.s
-.PHONY : Cpp11Learn/src/InitializerList.cpp.s
+src/Inheritance.cpp.s:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/Inheritance.cpp.s
+.PHONY : src/Inheritance.cpp.s
 
-Cpp11Learn/src/OperatorOverloading.o: Cpp11Learn/src/OperatorOverloading.cpp.o
+src/InitializerList.o: src/InitializerList.cpp.o
 
-.PHONY : Cpp11Learn/src/OperatorOverloading.o
+.PHONY : src/InitializerList.o
 
 # target to build an object file
-Cpp11Learn/src/OperatorOverloading.cpp.o:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/OperatorOverloading.cpp.o
-.PHONY : Cpp11Learn/src/OperatorOverloading.cpp.o
+src/InitializerList.cpp.o:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/InitializerList.cpp.o
+.PHONY : src/InitializerList.cpp.o
 
-Cpp11Learn/src/OperatorOverloading.i: Cpp11Learn/src/OperatorOverloading.cpp.i
+src/InitializerList.i: src/InitializerList.cpp.i
 
-.PHONY : Cpp11Learn/src/OperatorOverloading.i
+.PHONY : src/InitializerList.i
 
 # target to preprocess a source file
-Cpp11Learn/src/OperatorOverloading.cpp.i:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/OperatorOverloading.cpp.i
-.PHONY : Cpp11Learn/src/OperatorOverloading.cpp.i
+src/InitializerList.cpp.i:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/InitializerList.cpp.i
+.PHONY : src/InitializerList.cpp.i
 
-Cpp11Learn/src/OperatorOverloading.s: Cpp11Learn/src/OperatorOverloading.cpp.s
+src/InitializerList.s: src/InitializerList.cpp.s
 
-.PHONY : Cpp11Learn/src/OperatorOverloading.s
+.PHONY : src/InitializerList.s
 
 # target to generate assembly for a file
-Cpp11Learn/src/OperatorOverloading.cpp.s:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/OperatorOverloading.cpp.s
-.PHONY : Cpp11Learn/src/OperatorOverloading.cpp.s
+src/InitializerList.cpp.s:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/InitializerList.cpp.s
+.PHONY : src/InitializerList.cpp.s
 
-Cpp11Learn/src/TextFile.o: Cpp11Learn/src/TextFile.cpp.o
+src/OperatorOverloading.o: src/OperatorOverloading.cpp.o
 
-.PHONY : Cpp11Learn/src/TextFile.o
+.PHONY : src/OperatorOverloading.o
 
 # target to build an object file
-Cpp11Learn/src/TextFile.cpp.o:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/TextFile.cpp.o
-.PHONY : Cpp11Learn/src/TextFile.cpp.o
+src/OperatorOverloading.cpp.o:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/OperatorOverloading.cpp.o
+.PHONY : src/OperatorOverloading.cpp.o
 
-Cpp11Learn/src/TextFile.i: Cpp11Learn/src/TextFile.cpp.i
+src/OperatorOverloading.i: src/OperatorOverloading.cpp.i
 
-.PHONY : Cpp11Learn/src/TextFile.i
+.PHONY : src/OperatorOverloading.i
 
 # target to preprocess a source file
-Cpp11Learn/src/TextFile.cpp.i:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/TextFile.cpp.i
-.PHONY : Cpp11Learn/src/TextFile.cpp.i
+src/OperatorOverloading.cpp.i:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/OperatorOverloading.cpp.i
+.PHONY : src/OperatorOverloading.cpp.i
 
-Cpp11Learn/src/TextFile.s: Cpp11Learn/src/TextFile.cpp.s
+src/OperatorOverloading.s: src/OperatorOverloading.cpp.s
 
-.PHONY : Cpp11Learn/src/TextFile.s
+.PHONY : src/OperatorOverloading.s
 
 # target to generate assembly for a file
-Cpp11Learn/src/TextFile.cpp.s:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/TextFile.cpp.s
-.PHONY : Cpp11Learn/src/TextFile.cpp.s
+src/OperatorOverloading.cpp.s:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/OperatorOverloading.cpp.s
+.PHONY : src/OperatorOverloading.cpp.s
 
-Cpp11Learn/src/main.o: Cpp11Learn/src/main.cpp.o
+src/TextFile.o: src/TextFile.cpp.o
 
-.PHONY : Cpp11Learn/src/main.o
+.PHONY : src/TextFile.o
 
 # target to build an object file
-Cpp11Learn/src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/main.cpp.o
-.PHONY : Cpp11Learn/src/main.cpp.o
+src/TextFile.cpp.o:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/TextFile.cpp.o
+.PHONY : src/TextFile.cpp.o
 
-Cpp11Learn/src/main.i: Cpp11Learn/src/main.cpp.i
+src/TextFile.i: src/TextFile.cpp.i
 
-.PHONY : Cpp11Learn/src/main.i
+.PHONY : src/TextFile.i
 
 # target to preprocess a source file
-Cpp11Learn/src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/main.cpp.i
-.PHONY : Cpp11Learn/src/main.cpp.i
+src/TextFile.cpp.i:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/TextFile.cpp.i
+.PHONY : src/TextFile.cpp.i
 
-Cpp11Learn/src/main.s: Cpp11Learn/src/main.cpp.s
+src/TextFile.s: src/TextFile.cpp.s
 
-.PHONY : Cpp11Learn/src/main.s
+.PHONY : src/TextFile.s
 
 # target to generate assembly for a file
-Cpp11Learn/src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Cpp11Learn_exe.dir/build.make CMakeFiles/Cpp11Learn_exe.dir/Cpp11Learn/src/main.cpp.s
-.PHONY : Cpp11Learn/src/main.cpp.s
+src/TextFile.cpp.s:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/TextFile.cpp.s
+.PHONY : src/TextFile.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Cpp11Learn.dir/build.make CMakeFiles/Cpp11Learn.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -347,31 +347,31 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Cpp11Learn_exe"
-	@echo "... Cpp11Learn/src/ClassTemplateSpec.o"
-	@echo "... Cpp11Learn/src/ClassTemplateSpec.i"
-	@echo "... Cpp11Learn/src/ClassTemplateSpec.s"
-	@echo "... Cpp11Learn/src/Containers.o"
-	@echo "... Cpp11Learn/src/Containers.i"
-	@echo "... Cpp11Learn/src/Containers.s"
-	@echo "... Cpp11Learn/src/DefaultClass.o"
-	@echo "... Cpp11Learn/src/DefaultClass.i"
-	@echo "... Cpp11Learn/src/DefaultClass.s"
-	@echo "... Cpp11Learn/src/Inheritance.o"
-	@echo "... Cpp11Learn/src/Inheritance.i"
-	@echo "... Cpp11Learn/src/Inheritance.s"
-	@echo "... Cpp11Learn/src/InitializerList.o"
-	@echo "... Cpp11Learn/src/InitializerList.i"
-	@echo "... Cpp11Learn/src/InitializerList.s"
-	@echo "... Cpp11Learn/src/OperatorOverloading.o"
-	@echo "... Cpp11Learn/src/OperatorOverloading.i"
-	@echo "... Cpp11Learn/src/OperatorOverloading.s"
-	@echo "... Cpp11Learn/src/TextFile.o"
-	@echo "... Cpp11Learn/src/TextFile.i"
-	@echo "... Cpp11Learn/src/TextFile.s"
-	@echo "... Cpp11Learn/src/main.o"
-	@echo "... Cpp11Learn/src/main.i"
-	@echo "... Cpp11Learn/src/main.s"
+	@echo "... Cpp11Learn"
+	@echo "... src/ClassTemplateSpec.o"
+	@echo "... src/ClassTemplateSpec.i"
+	@echo "... src/ClassTemplateSpec.s"
+	@echo "... src/Containers.o"
+	@echo "... src/Containers.i"
+	@echo "... src/Containers.s"
+	@echo "... src/DefaultClass.o"
+	@echo "... src/DefaultClass.i"
+	@echo "... src/DefaultClass.s"
+	@echo "... src/Inheritance.o"
+	@echo "... src/Inheritance.i"
+	@echo "... src/Inheritance.s"
+	@echo "... src/InitializerList.o"
+	@echo "... src/InitializerList.i"
+	@echo "... src/InitializerList.s"
+	@echo "... src/OperatorOverloading.o"
+	@echo "... src/OperatorOverloading.i"
+	@echo "... src/OperatorOverloading.s"
+	@echo "... src/TextFile.o"
+	@echo "... src/TextFile.i"
+	@echo "... src/TextFile.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

@@ -1,0 +1,5 @@
+language: c
+build:
+  ci:
+    - cmake .
+    - cmake --build .

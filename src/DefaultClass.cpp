@@ -10,6 +10,7 @@
 #include "InitializerList.h"
 
 #include <iostream>
+#include <ctime>
 
 
 DefaultClass::DefaultClass()

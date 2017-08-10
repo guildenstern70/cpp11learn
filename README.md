@@ -16,6 +16,14 @@ Build using CMake
 2. Make the project 
 
        cmake --build .  
+
+3. Compile (make executable)
+
+       make    
+
+4. Clean
+
+       make clean        
        
 
 Common Git Ops

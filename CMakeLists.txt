@@ -3,7 +3,7 @@ project(Cpp11Learn)
 
 set(CMAKE_CXX_FLAGS "-Wall -Wno-long-long -pedantic -std=c++11")
 set(OUTPUT_DIR "out")
-set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR})
 
 file(MAKE_DIRECTORY ${OUTPUT_DIR})
 

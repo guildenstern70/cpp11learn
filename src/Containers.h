@@ -19,6 +19,7 @@ class Containers
         virtual ~Containers();
     protected:
         std::string vectorTest() const;
+        std::string setTest() const;
         std::string arrayTest() const;
     private:
 };

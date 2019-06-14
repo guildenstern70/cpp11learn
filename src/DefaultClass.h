@@ -22,7 +22,7 @@ public:
 	void currentDateTime(char* dateTime);
     void setAge(uint age) { this->age = age; }
     uint getAge() { return this->age; }
-	virtual ~DefaultClass() {};
+	virtual ~DefaultClass() = default;;
 private:
 	std::string firstName;
 	std::string lastName;

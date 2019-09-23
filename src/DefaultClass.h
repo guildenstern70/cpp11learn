@@ -26,7 +26,7 @@ public:
 private:
 	std::string firstName;
 	std::string lastName;
-	uint age{};
+	uint age;
 	std::string whenCreated;
 };
 

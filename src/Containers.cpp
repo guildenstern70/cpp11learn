@@ -10,17 +10,19 @@
 
 #include <array>
 #include <vector>
+#include <set>
 #include <iostream>
 #include <sstream>
 
 
-Containers::~Containers() {}
+Containers::~Containers() = default;
 
 std::string Containers::testAll() const
 {
     std::ostringstream result;
     result << this->arrayTest();
     result << this->vectorTest();
+    result << this->setTest();
     return result.str();
 }
 
@@ -33,6 +35,26 @@ std::string Containers::arrayTest() const
         result << i << ' ';
     result << std::endl;
 
+    return result.str();
+}
+
+std::string Containers::setTest() const
+{
+    std::ostringstream result;
+    std::set<int> gquiz1;
+
+    // insert elements in random order
+    gquiz1.insert(40);
+    gquiz1.insert(30);
+    gquiz1.insert(60);
+    gquiz1.insert(20);
+    gquiz1.insert(50);
+    gquiz1.insert(50); // only one 50 will be added to the set
+    gquiz1.insert(10);
+
+    for(auto& i: gquiz1)
+        result << i << ' ';
+    result << std::endl;
     return result.str();
 }
 

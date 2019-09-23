@@ -17,16 +17,16 @@ class DefaultClass
 {
 public:
 	DefaultClass();
-	DefaultClass(const std::string& name, const std::string& surname);
-	const std::string toString() const;
-	void currentDateTime(char* dateTime);
-    void setAge(uint age) { this->age = age; }
+	DefaultClass(std::string  name, std::string  surname);
+	std::string toString() const;
+	static void currentDateTime(char* dateTime);
+    void setAge(uint providedAge) { this->age = providedAge; }
     uint getAge() { return this->age; }
-	virtual ~DefaultClass() {};
+	virtual ~DefaultClass() = default;
 private:
 	std::string firstName;
 	std::string lastName;
-	uint age;
+	uint age{};
 	std::string whenCreated;
 };
 

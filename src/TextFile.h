@@ -20,7 +20,7 @@ public:
     /*!
       \param fileName Full path to file
     */
-    TextFile(const std::string& fileName);
+    explicit TextFile(const std::string& fileName);
 
     //! Read from file
     /*!

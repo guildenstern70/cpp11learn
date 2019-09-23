@@ -21,7 +21,7 @@ struct Person
 struct Student : Person
 {
     std::string expertise;
-    virtual std::string toString() const override;
+    std::string toString() const override;
 };
 
 #endif

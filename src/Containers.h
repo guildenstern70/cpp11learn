@@ -14,7 +14,7 @@
 class Containers
 {
     public:
-        Containers() {}
+        Containers() = default;
         std::string testAll() const;
         virtual ~Containers();
     protected:

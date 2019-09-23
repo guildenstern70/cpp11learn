@@ -11,11 +11,11 @@
 
 #include <iostream>
 #include <ctime>
+#include <utility>
 
 
 DefaultClass::DefaultClass()
 {
-    
     srand ((unsigned int) time(nullptr));
     
     Names nameGenerator;
@@ -28,10 +28,11 @@ DefaultClass::DefaultClass()
 
 }
 
-DefaultClass::DefaultClass(const std::string& name, const std::string& surname) : firstName(name), lastName(surname)
+DefaultClass::DefaultClass(std::string  name,
+        std::string  surname) : firstName(std::move(name)), lastName(std::move(surname))
 {
     char buffer[160];
-    this->currentDateTime(buffer);
+    DefaultClass::currentDateTime(buffer);
 	this->whenCreated = std::string(buffer);
 }
 
@@ -50,7 +51,7 @@ void DefaultClass::currentDateTime(char* dateTime)
 
 }
 
-const std::string DefaultClass::toString() const
+std::string DefaultClass::toString() const
 {
 	return (this->firstName + " " + this->lastName + " [Born on "+ this->whenCreated + "]" );
 }
